@@ -1,6 +1,6 @@
 # Comparação entre Método Clássico de Processamento Digital de Imagens e Rede Neural para Segmentação de Nódulos Pulmonares em Tomografias Computadorizadas
 
-## 👥 Autores e Orientação
+## Autores e Orientação
 * **Autores:** Daniel Augusto de Carvalho e Leonardo dos Santos Melati
 * **Orientador:** Prof. Dr. Luiz Antonio Celiberto Junior
 * **Instituição:** UFABC (Universidade Federal do ABC)
@@ -8,12 +8,12 @@
 
 ---
 
-## ⚠️ Aviso Importante: Configuração de Diretórios Locais
+## Aviso Importante: Configuração de Diretórios Locais
 Este repositório mantém a estrutura original dos caminhos de diretórios utilizada no ambiente de desenvolvimento dos autores. **Antes de executar os scripts em sua máquina**, verifique e edite manualmente as variáveis de caminho (*paths*) no início de cada arquivo `.py` para apontar corretamente para a pasta raiz onde você salvou o seu conjunto de dados e onde deseja salvar os artefatos processados do projeto.
 
 ---
 
-## 🛠️ Ambientes de Execução
+## Ambientes de Execução
 Para garantir a reprodutibilidade dos experimentos descritos no TCC, o pipeline foi dividido em dois ambientes computacionais distintos, respeitando a exigência de processamento de cada etapa:
 
 1. **Ambiente Local (Visual Studio Code + Python):** Utilizado para a preparação do banco de dados, filtragem, extração de fatias (*slices*), execução e calibração do método clássico de processamento de imagens, e geração de gráficos auxiliares. Requer ambiente Python com as bibliotecas descritas no script de setup.
@@ -21,13 +21,13 @@ Para garantir a reprodutibilidade dos experimentos descritos no TCC, o pipeline 
 
 ---
 
-## 📦 Dependências e Instalação
+## Dependências e Instalação
 Para configurar o ambiente Python localmente, execute o script de setup fornecido ou instale manualmente as bibliotecas base:
 `numpy`, `pandas`, `scikit-learn`, `scikit-image`, `opencv-python`, `pydicom`, `nibabel`, `pylidc`, `torch`, `torchvision`, `matplotlib`, `seaborn`.
 
 ---
 
-## 📂 Estrutura e Descrição Detalhada do Pipeline (Scripts 0 a 11)
+## Estrutura e Descrição Detalhada do Pipeline (Scripts 0 a 11)
 
 O pipeline experimental está modularizado em 12 etapas sequenciais que cobrem desde a extração dos dados brutos em formato DICOM até a avaliação estatística comparativa final.
 
@@ -51,7 +51,7 @@ O pipeline experimental está modularizado em 12 etapas sequenciais que cobrem d
 
 ---
 
-## 📈 Scripts Auxiliares e de Apoio Documental
+## Scripts Auxiliares e de Apoio Documental
 * **`visualizar_consenso.py`**: Ferramenta visual de *debugging* técnico. Plota mapas de calor e *overlays* para evidenciar o grau de sobreposição e discordância entre os diferentes médicos radiologistas da base LIDC-IDRI em relação à máscara de consenso final.
 * **`gerar_imagens_teoria_metodologia.py`**: Script voltado puramente para apoio acadêmico. Renderiza gráficos, histogramas de distribuição de Hounsfield Units e estágios passo a passo da segmentação do pulmão para ilustrar o documento escrito da monografia.
 * **`gerar_exemplos_qualitativos.py`**: Seleciona e processa recortes representativos do Teste, gerando painéis visuais (*subplots* lado a lado) que comparam o Ground Truth, a predição Clássica e a predição da U-Net, fundamentais para a discussão qualitativa dos resultados no TCC.
