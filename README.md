@@ -50,7 +50,7 @@ O pipeline experimental está modularizado em 12 etapas sequenciais que cobrem d
 * **`11_unet_avaliar_por_nodulo.py`**: Semelhante ao Script 7, realiza a avaliação da U-Net no espaço volumétrico 3D para detecção de instâncias. Calcula as taxas de sensibilidade por nódulo físico e quantifica a incidência de Falsos Positivos, permitindo uma comparação pareada direta entre o desempenho da Inteligência Artificial e a heurística Clássica.
 
 ---
-
+  
 ## Scripts Auxiliares e de Apoio Documental
 * **`visualizar_consenso.py`**: Ferramenta visual de *debugging* técnico. Plota mapas de calor e *overlays* para evidenciar o grau de sobreposição e discordância entre os diferentes médicos radiologistas da base LIDC-IDRI em relação à máscara de consenso final.
 * **`gerar_imagens_teoria_metodologia.py`**: Script voltado puramente para apoio acadêmico. Renderiza gráficos, histogramas de distribuição de Hounsfield Units e estágios passo a passo da segmentação do pulmão para ilustrar o documento escrito da monografia.
